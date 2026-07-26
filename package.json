@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "opennextjs-cloudflare build && wrangler pages deploy .open-next/assets --project-name travel-recs"
+    "deploy": "opennextjs-cloudflare build && wrangler deploy"
   },
   "dependencies": {
     "next": "^15.3.0",
