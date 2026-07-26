@@ -31,7 +31,7 @@ export default function TravelRecsLandingPage() {
         <header className="masthead">
           <div className="masthead-issue">A Notebook by Bessie Chu</div>
           <h1 className="masthead-title">
-            Travel <em>Recs</em>
+            Food and Travel<em> Recs</em>
           </h1>
           <div className="masthead-tagline">
             Restaurants, cafes, bars, and places worth your time
