@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blue-50: #EBF3FB;
+  --color-blue-100: #D0E7F5;
+  --color-blue-200: #A8D0EC;
+  --color-blue-500: #2E7DC4;
+  --color-blue-700: #185FA5;
+  --color-blue-900: #0C3B6B;
+  --color-sand-50: #FAF9F7;
+  --color-sand-100: #F1EFE8;
+  --color-sand-200: #E2DFD6;
+  --color-sand-300: #C8C5BF;
+  --color-sand-500: #7A7772;
+  --color-sand-700: #444241;
+  --color-sand-900: #1A1918;
+  --color-pin-restaurant: #D85A30;
+  --color-pin-cafe: #185FA5;
+  --color-pin-bar: #534AB7;
+  --color-pin-hotel: #0F6E56;
+  --color-pin-activity: #854F0B;
+  --color-pin-shop: #8B3A62;
+  --color-pin-museum: #4A6741;
+  --color-pin-park: #2D7D46;
+  --color-pin-beach: #1A8FA0;
+  --color-pin-other: #6B6B6B;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  background: var(--color-sand-50);
+  color: var(--color-sand-900);
+}
+
+/* Leaflet overrides */
+.leaflet-container {
+  font-family: inherit;
+  border-radius: 10px;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.leaflet-popup-content {
+  margin: 12px 14px;
+  font-size: 13px;
+  line-height: 1.5;
+}

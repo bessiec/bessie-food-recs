@@ -1,0 +1,18 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "travel-recs",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-06-06",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "travel-recs",
+      "database_id": "f21d73fe-6231-4f9a-a13e-8053d5a07281"
+    }
+  ]
+}
