@@ -86,7 +86,7 @@ export const taiwan: TaiwanSection = {
   kicker: "Taiwanese Expat",
   title: "The Taiwan Guide",
   titleEmphasis: "Guide",
-  dek: "My dedicated guide to Taiwan — maps across multiple cities, plus essays on history, food, and where to go beyond Taipei. Lives on its own site.",
+  dek: "My dedicated guide to Taiwan with city and genre specific food maps, where to go beyond Taipei, and writing on Taiwan.",
   ctaLabel: "Visit the Taiwan Guide",
   url: "https://www.taiwanese-expat.com",
 };
