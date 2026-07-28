@@ -43,6 +43,12 @@ export type Region = {
   cities: { city: string; country: string; url: string }[];
 };
 
+export type FoodExpert = {
+  name: string;
+  url: string;
+  description: string;
+};
+
 export const homeCities: HomeCityCard[] = [
   {
     number: "01",
@@ -129,5 +135,23 @@ export const regions: Region[] = [
       { city: "Medellín", country: "Colombia", url: "https://www.google.com/maps/d/u/0/edit?mid=1h-6GosRFzB4kkmwN9UTlYFIn_hYXYxWE&usp=sharing" },
       { city: "Santiago", country: "Chile", url: "https://www.google.com/maps/d/u/0/edit?mid=1fwqwBHvPDOBcvcHXBnyjLBQQPM-RjYjv&usp=sharing" },
     ],
+  },
+];
+
+export const foodExperts: FoodExpert[] = [
+  {
+    name: "Between Drinks",
+    url: "https://betweendrinks.co/",
+    description: "Podcast from Caro Griffin, an expert on cocktails and history of spirits.",
+  },
+  {
+    name: "Sonya Bites Life",
+    url: "https://www.instagram.com/sonyabiteslife/",
+    description: "Taiwan-based Food creator on Instagram.",
+  },
+  {
+    name: "Clarissa Wei",
+    url: "https://clarissawei.com/",
+    description: "Taiwan-based journalist and author of Made in Taiwan.",
   },
 ];

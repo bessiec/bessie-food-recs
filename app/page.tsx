@@ -1,7 +1,7 @@
 // app/travelrecs/page.tsx
 // To edit content or add cities, open data.ts in this same folder.
 
-import { homeCities, taiwan, regions } from "./data";
+import { homeCities, taiwan, regions, foodExperts } from "./data";
 
 function renderTitleWithEmphasis(title: string, emphasis: string) {
   if (!emphasis) return title;
@@ -147,6 +147,28 @@ export default function TravelRecsLandingPage() {
           ))}
         </div>
 
+        <div className="section-label">
+          <span className="num">iv.</span>
+          <span>Recommended Food Experts to Follow</span>
+        </div>
+
+        <div className="experts">
+          {foodExperts.map((expert) => (
+            <a
+              key={expert.name}
+              href={expert.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="expert-card"
+            >
+              <div className="expert-name">
+                {expert.name} <span aria-hidden="true">↗</span>
+              </div>
+              <div className="expert-description">{expert.description}</div>
+            </a>
+          ))}
+        </div>
+
         <div className="colophon">
           <div>Curated by Bessie Chu</div>
           <div className="colophon-right">
@@ -215,6 +237,12 @@ const styles = `
   .region-card-meta { font-family: 'EB Garamond', Georgia, serif; font-size: 12px; color: #9DA09C; font-style: italic; line-height: 1.2; }
   .region-card-arrow { margin-top: 10px; display: flex; align-items: baseline; gap: 5px; font-family: 'EB Garamond', Georgia, serif; font-size: 12px; color: #3D403D; font-style: italic; }
 
+  .experts { padding: 0 32px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .expert-card { background: white; border: 0.5px solid #E2E3DF; padding: 18px 18px 16px; transition: border-color .15s, transform .15s; text-decoration: none; color: inherit; display: block; }
+  .expert-card:hover { border-color: #9DA09C; transform: translateY(-1px); }
+  .expert-name { font-family: 'EB Garamond', Georgia, serif; font-size: 20px; font-weight: 400; margin-bottom: 6px; line-height: 1.2; color: #1A1C1A; }
+  .expert-description { font-family: 'EB Garamond', Georgia, serif; font-size: 13px; line-height: 1.5; color: #5D605C; font-style: italic; }
+
   .colophon { margin-top: 60px; padding: 24px 32px; border-top: 0.5px solid #D2D3D0; display: flex; justify-content: space-between; align-items: center; font-family: 'EB Garamond', Georgia, serif; font-style: italic; font-size: 13px; color: #5D605C; }
   .colophon-right { display: flex; gap: 18px; }
   .colophon a { color: #1A1C1A; text-decoration: none; border-bottom: 0.5px solid #5D605C; }
@@ -222,6 +250,7 @@ const styles = `
   @media (max-width: 768px) {
     .featured { grid-template-columns: 1fr; }
     .region-grid { grid-template-columns: repeat(2, 1fr); }
+    .experts { grid-template-columns: 1fr; }
     .taiwan-section { padding: 36px 24px; }
     .taiwan-title { font-size: 36px; }
     .taiwan-hanzi { font-size: 80px; right: 16px; opacity: 0.6; }
