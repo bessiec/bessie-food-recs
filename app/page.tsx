@@ -2,6 +2,7 @@
 // To edit content or add cities, open data.ts in this same folder.
 
 import { homeCities, taiwan, regions, foodExperts } from "./data";
+import Script from "next/script";
 
 function renderTitleWithEmphasis(title: string, emphasis: string) {
   if (!emphasis) return title;
@@ -18,6 +19,19 @@ function renderTitleWithEmphasis(title: string, emphasis: string) {
 export default function TravelRecsLandingPage() {
   return (
     <>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-JCZN280491" />
+      <Script
+        id="gtag-init"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);} 
+            gtag('js', new Date());
+
+            gtag('config', 'G-JCZN280491');
+          `,
+        }}
+      />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
       <link
