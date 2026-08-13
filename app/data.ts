@@ -134,6 +134,7 @@ export const regions: Region[] = [
       { city: "Lima", country: "Peru", url: "https://www.google.com/maps/d/u/0/edit?mid=1aXWmSyBJXgc_05mkEsrgPYbtvOLH9mtF&usp=sharing" },
       { city: "Medellín", country: "Colombia", url: "https://www.google.com/maps/d/u/0/edit?mid=1h-6GosRFzB4kkmwN9UTlYFIn_hYXYxWE&usp=sharing" },
       { city: "Santiago", country: "Chile", url: "https://www.google.com/maps/d/u/0/edit?mid=1fwqwBHvPDOBcvcHXBnyjLBQQPM-RjYjv&usp=sharing" },
+      { city: "Santa Barbara", country: "USA", url: "https://www.google.com/maps/d/u/0/edit?mid=13mftuebTUIGyS_1KjmdNMboAEh7Xx4k" },
     ],
   },
 ];
